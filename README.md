@@ -1,146 +1,65 @@
 Memory Flip Game
-A simple browser-based memory / matching card game built with HTML, CSS and JavaScript.
+A simple browser-based memory card matching game built with HTML, CSS and JavaScript.
 
-Live demo: (add a link here if you host the game, e.g. GitHub Pages)
+Demo: Open index.html in a browser (or serve the project with a local static server).
 
 Table of contents
 About
 Features
 How to play
-Tech stack
+Installation / Run locally
 Project structure
-Installation & running locally
 Customization
-Development
-Known issues
+Technologies
 Contributing
 License
 Contact
 About
-Memory Flip Game is a small single-player game where the player flips cards to find matching pairs. It’s implemented using plain JavaScript (no frameworks), CSS for styling and HTML for markup—intended as an easy-to-understand demo for beginners.
+Memory Flip Game is a lightweight implementation of the classic memory/matching card game. Flip cards to find matching pairs. The goal is to match all pairs in the fewest moves and shortest time.
 
 Features
-Simple grid of card tiles
-Flip animation and matching logic
-Score / moves tracking (if implemented)
-Configurable grid size / difficulty (optional)
-Responsive layout for desktop and mobile
+Click/tap to flip cards
+Pair matching logic
+Move counter and timer
+Simple responsive layout
+Easy to extend with new themes or card sets
 How to play
-Click (or tap) any card to flip it.
-Flip a second card to try to match the first.
-If the two cards match, they remain revealed; otherwise they flip back.
+Click any card to flip it.
+Flip a second card to try to find its match.
+If the two cards match, they remain face up. If not, they flip back over.
 Continue until all pairs are matched.
-The game may track the number of moves or time — lower is better.
-Tech stack
-JavaScript (game logic)
-HTML5 (markup)
-CSS3 (layout & animations)
+Try to minimize moves and time.
+Installation / Run locally
+Clone the repository: git clone https://github.com/kvVyshnavi/memory_flip_game.git
+Open the project folder: cd memory_flip_game
+Open index.html in your browser, or run a static server:
+With Python 3: python -m http.server 8000 then open http://localhost:8000
+With Node (http-server): npx http-server .
 Project structure
-(Adjust this list to match your repo)
+index.html — main HTML file
+css/ — stylesheets
+js/ — JavaScript game logic
+assets/ — images or icons (if present)
+README.md — project documentation
+(Adjust paths above if your repository uses different folders.)
 
-index.html — main entry
-css/
-styles.css — game styling
-js/
-main.js — game logic and event handlers
-assets/
-images/ — card images or icons
-README.md — this file
-Installation & running locally
-Option A — Open in browser:
-
-Clone the repo: git clone https://github.com/kvVyshnavi/memory_flip_game.git
-Open index.html in your browser.
-Option B — Run via simple static server (recommended for some browser features):
-
-Install a tiny server, e.g. npm install -g serve or live-server
-From repo root: serve . (or) live-server
-Open the provided local URL in the browser.
 Customization
-To change card images: replace files in assets/images and update references in js or CSS.
-To change grid size: update the grid generation logic in js/main.js (look for variables like rows/columns or cardCount).
-To tweak animations: edit CSS transitions in css/styles.css.
-Development
-Code is structured for simple readability: separate DOM manipulation, game-state logic, and rendering.
-Use browser devtools to debug, set breakpoints in js/main.js, and watch console logs.
-If adding features (timer, best scores, difficulty levels), keep logic modular (functions for shuffle, flip, match-check).
-Known issues
-(List any issues you know; otherwise remove this section or write “No known issues.”)
-Example: On very small screens, the grid may overflow. Consider responsive breakpoints.
+To change card faces or add themes, update the images/assets and modify the card data in the JavaScript file.
+Difficulty can be changed by increasing or decreasing the number of pairs.
+Technologies
+JavaScript
+HTML5
+CSS3
+Repository language composition: JavaScript (~73%), CSS (~14%), HTML (~13%).
+
 Contributing
-Contributions are welcome:
+Contributions are welcome. Suggested workflow:
 
-Fork the repository.
-Create a feature branch: git checkout -b feature-name
-Commit your changes: git commit -m "Add feature"
-Push to your fork and open a pull request.
-Please open issues for bugs or feature requests.
-
+Fork the repo
+Create a branch for your feature/fix
+Submit a pull request with a clear description of changes
 License
-This project is licensed under the MIT License. See LICENSE file for details.
+Choose a license (e.g., MIT). If you want, I can add a LICENSE file and set the license section for you.
 
 Contact
-Maintainer: kvVyshnavi
-(Replace with an email or link to your GitHub profile if you want.)
-
-Explanation of each README section (what it does and what to edit)
-
-Title and short description
-
-Purpose: Tell visitors immediately what the project is.
-Edit: Replace with a more descriptive title or tagline if you prefer.
-Live demo
-
-Purpose: Provide a quick way for people to try the game.
-Edit: Add a GitHub Pages link (https://kvVyshnavi.github.io/memory_flip_game) or other hosted URL if you deploy.
-Table of contents
-
-Purpose: Quick navigation for longer READMEs. Keep or remove as needed.
-About
-
-Purpose: High-level summary, goals, and intended audience.
-Edit: Add project origin (tutorial, assignment) or any special design goals.
-Features
-
-Purpose: Highlight what the game currently supports.
-Edit: List only actual implemented features; add/remove items.
-How to play
-
-Purpose: Explain gameplay in plain language so users know what to do.
-Edit: Add keyboard controls or scoring details if present.
-Tech stack
-
-Purpose: Quick overview of technologies used.
-Edit: Add versions or libraries (e.g., jQuery) if used.
-Project structure
-
-Purpose: Show repository layout so contributors know where code lives.
-Edit: Update file names and folders to reflect your repo exactly.
-Installation & running locally
-
-Purpose: Guide users to run the project on their machines.
-Edit: Use commands you rely on (e.g., npm start) if there is a build step. If the game works by opening index.html, keep that simple option.
-Customization
-
-Purpose: Explain how to change visuals, difficulty, or behavior.
-Edit: Give file names and variable names that users should edit.
-Development
-
-Purpose: Tips for contributors and maintainers on code layout and testing/debugging.
-Edit: Add any linting, test, or build commands if applicable.
-Known issues
-
-Purpose: Transparent list of current problems or limitations.
-Edit: Keep updated as you fix or discover issues.
-Contributing
-
-Purpose: Tell people how to contribute and the workflow you expect.
-Edit: Add contribution guidelines, code style, or a link to CONTRIBUTING.md if you have one.
-License
-
-Purpose: Let others know how they can reuse your code.
-Edit: Choose and add the correct license file (MIT, Apache, etc.) and update this section accordingly.
-Contact
-
-Purpose: Provide maintainer contact or link to GitHub profile for questions.
-Edit: Add email or Twitter/Discord if you want direct contact.
+Maintainer: @kvVyshnavi
